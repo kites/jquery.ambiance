@@ -6,6 +6,7 @@
 , "dependencies": {
     "component/jquery": "*"
   }
+, "main": "assets/js/jquery.ambiance.js"
 , "scripts": [
     "assets/js/jquery.ambiance.js"
   ]
