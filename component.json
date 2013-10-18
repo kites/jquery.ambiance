@@ -3,9 +3,7 @@
 , "repo": "kites/jquery.ambiance"
 , "description": "jQuery notification plugin"
 , "version": "1.0.1"
-, "dependencies": {
-    "component/jquery": "*"
-  }
+, "main": "assets/js/jquery.ambiance.js"
 , "scripts": [
     "assets/js/jquery.ambiance.js"
   ]
