@@ -10,7 +10,7 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-(function($) {
+var jQuery_fn_ambiance = (function($) {
   $.fn.ambiance = function(options) {
 
     var defaults = {
@@ -69,7 +69,13 @@
     }
   };
   $.ambiance = $.fn.ambiance; // Rename for easier calling.
-})(jQuery || require('jquery'));
+});
+
+if (module) {
+  module.exports = jQuery_fn_ambiance
+} else if (jQuery) {
+  jQuery_fn_ambiance(jQuery)
+}
 
 $(document).ready(function() {
   // Deal with adding the notification area to the page.
